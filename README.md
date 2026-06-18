@@ -1,10 +1,14 @@
 # Files
-```nn-1-lookback```: First approach, simple neural network with limited preprocessing. High error.
+```data.ipynb```: Data collection and basic formatting/filtering. Written to be run separately on multiple computers to mitigate rate-limiting.
 
-```nn-2-lookback-classifier```: Second approach, attempt to make a classification model work to reduce problem complexity. High error.
+```nn-1-lookback.ipynb```: First approach, simple neural network with limited preprocessing. High error.
 
-```nn-3-lookback-geomdelta```: Third approach, using logarithms to turn ratios into differences, which may be easier for the network to work with. High error (though notably improved).
+```nn-2-lookback-classifier.ipynb```: Second approach, attempt to make a classification model work to reduce problem complexity. High error.
 
-```nn-4-rnn```: Final approach, using a recurrent neural network (LSTM) to improve time series understanding. Moderate error, is often very accurate.
+```nn-3-lookback-geomdelta.ipynb```: Third approach, using logarithms to turn ratios into differences, which may be easier for the network to work with. High error (though notably improved).
 
-```model1.keras```: Best model produced by final approach. 
+```nn-4-rnn.ipynb```: Final approach, using a recurrent neural network (LSTM layer) to improve time series understanding. Moderate error, most often accurate.
+
+```model1.keras```: Best model produced by final approach. Loaded by livetest notebook.
+
+```livetest.ipynb```: Loads model1, gets current stock price data, tests prediction against new data when it's available.
